@@ -15,6 +15,10 @@
 				<p><label>Mobile : </label>{{ user?.cell || 'N/A' }}</p>
 			</div>
 		</div>
+		<div class="login">
+			<p><label>username : </label>{{ user.login.username }}</p>
+			<p><label>uuid : </label>{{ user.login.uuid }}</p>
+		</div>
 		<div class="actions">
 			<button @click="duplicateUser">Dupliquer</button>
 			<button @click="deleteUser">Supprimer</button>
@@ -95,8 +99,17 @@ export default {
 	padding: 0 10px;
 }
 
-.profile label {
+label {
 	font-weight: bold;
+}
+
+.login {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: -3rem;
+	padding-bottom: 3rem;
 }
 
 .actions{
@@ -105,7 +118,7 @@ export default {
 	clear: both;
 
 	width: 100%;
-	bottom: .5rem;
+	bottom: 2rem;
 	right: 1.1rem;
 	justify-content: flex-end;
 	
