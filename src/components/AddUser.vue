@@ -3,7 +3,7 @@
 		<h2>Ajouter un utilisateur</h2>
 		<p>
 			<label for="lastName">Civilité:</label>
-			<select type="text" id="lastName" placeholder="nom de famille" v-model="form.name.title" >
+			<select type="text" id="lastName" placeholder="civilité" v-model="form.name.title" >
 				<option value="M.">Monsieur</option>
 				<option value="Mme">Madame</option>
 			</select>
@@ -18,15 +18,15 @@
 		</p>
 		<p>
 			<label for="nationality">Nationnalité:</label>
-			<input type="text" id="nationality" placeholder="prénom" v-model="form.nationality" />
+			<input type="text" id="nationality" placeholder="Natonnalité" v-model="form.nationality" />
 		</p>
 		<p>
 			<label for="dob">Date de naissance:</label>
-			<input type="date" id="dob" placeholder="prénom" v-model="form.dob.date" required />
+			<input type="date" id="dob" placeholder="Date de naissance" v-model="form.dob.date" required />
 		</p>
 		<p>
 			<label for="email">Email:</label>
-			<input type="email" id="email" placeholder="" v-model="form.email"
+			<input type="email" id="email" placeholder="E-mail" v-model="form.email"
 				required />
 		</p>
 		<button type="submit">Ajouter</button>
